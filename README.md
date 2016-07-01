@@ -4,7 +4,7 @@
 
 Portera’s Dash Button is a Wi-Fi connected device that operates seamlessly integrated with the web server and cloud server and places an order with the press of a button. Each Dash Button is paired with a user, whose personal information and device ID is kept in the server after the sign-up process. Hence, the button allows user to place an order by using Cloud systems and IoT solutions. When the order process is completed, the user also gets notified about the order via SMS.
 
-The dash button can be specialized to any activity that functions online and supports web servers. It allows users to do one task with a click of a button, and the limits of its use is unbounded. However, in this very brief documentation, in order to exemplify one of its most useful use cases functions and work flows related to the ordering process via dash button will be covered.
+> The dash button can be specialized to any activity that functions online and supports web servers. It allows users to do one task with a click of a button, and the limits of its use is unbounded. However, in this very brief documentation, in order to exemplify one of its most useful use cases functions and work flows related to the ordering process via dash button will be covered.
 
 
 ## 2. Design
@@ -68,7 +68,7 @@ Last but not least, manipulating webhooks can easily get messy considering that 
 
 Twilio enables our application to send text and multimedia messages globally via its Programmable SMS service. Further, it allows its users to have a local, mobile, toll-free, or short code phone numbers for their applications. To start with, it is strongly recommended to go through the [tutorials](https://www.twilio.com/docs/tutorials) and read the [documentation](https://www.twilio.com/docs/api/rest/sending-messages) first.
 
-Twilio is one of the most common Global SMS/MMS platform, possibly the most popular one, and it stands out with its user-friendly interface and widely available libraries for development among other alternatives. In our application, it is our design choice to send text messages from a script, on the other hand, the same functionality could be obtained by calling Twilio API from the particle file. Moreover, it is possible to call Twilio API from a PHP script whereas it is also possible to achieve similar results using *Curl, Ruby, Python, Node.js, Java, C#* and some other programming languages.
+>Twilio is one of the most common Global SMS/MMS platform, possibly the most popular one, and it stands out with its user-friendly interface and widely available libraries for development among other alternatives. In our application, it is our design choice to send text messages from a script, on the other hand, the same functionality could be obtained by calling Twilio API from the particle file. Moreover, it is possible to call Twilio API from a PHP script whereas it is also possible to achieve similar results using *Curl, Ruby, Python, Node.js, Java, C#* and some other programming languages.
 
 As seen in the figure, the variables Account Sid and Authorization Token for the API must be obtained beforehand to use the Twilio Services. Twilio also provides us with a template code that sends a text message to a specific phone number on its website. Nevertheless, the example script provided by Twilio is not enough for some requirements in our project. Thus, the code is modified by adding the date that the order is received to the text message. Furthermore, in order to create a generic call method, the query that finds the user’s data stored in the database is added by using the methods CakePHP provides. As a matter of fact, these two cases are achieved by retrieving the time *(published_at)* and the device id *(particle_long)* data from the post request that is sent to the server via our dash button
 
@@ -84,7 +84,7 @@ To install the dash button, assuming that the design and the implementation step
 
 ### 4.2. For Developers
 
-To develop a dash button, developer must form the circuit first, as described in the Design section. Then, Particle IDE must be downloaded from here, or Particle Web IDE can also be used. Whereas the web IDE offers easy use with no installation or any configuration, the desktop IDE provides a better platform for complex projects. After setting up the developing platform, it is strongly suggested to complete and read the documentation available on Particle’s website.
+To develop a dash button, developer must form the circuit first, as described in the Design section. Then, Particle IDE must be downloaded from here, or Particle Web IDE can also be used. Whereas the web IDE offers easy use with no installation or any configuration, the desktop IDE provides a better platform for complex projects. After setting up the developing platform, it is strongly suggested to complete and read the [documentation](https://docs.particle.io/guide/getting-started/intro/photon/) available on Particle’s website.
 
 ## 5. Examples
 
@@ -125,7 +125,7 @@ For agile development and rapid application growth, the open source PHP framewor
 
 The Database simply holds the data related to Device ID and the time the request being sent. Hence, this uniqueness allows the web page to be started by some specific sources, but other devices that can also send request to the same server. As the dash button is pushed, it posts the device id and the the time that is published at to the server. Then, server retrieves the device id and after checking the validity of the request, it triggers the application on the page.
 
-Before moving the web application to the web server, it has been implemented on the local host enabled by Oracle VirtualBox, Vagrant, and Laravel Homestead. For more information on how the local server is built using these tools, several documentations for  [Laravel Homestead](https://laravel.com/docs/master/homestead) and [installing CakePHP on the Laravel Homestead](http://www.justinatack.com/blog/2015/install-cakephp3-laravel-homestead/) are available online.
+>Before moving the web application to the web server, it has been implemented on the local host enabled by Oracle VirtualBox, Vagrant, and Laravel Homestead. For more information on how the local server is built using these tools, several documentations for  [Laravel Homestead](https://laravel.com/docs/master/homestead) and [installing CakePHP on the Laravel Homestead](http://www.justinatack.com/blog/2015/install-cakephp3-laravel-homestead/) are available online.
 Building the Dash Button
 
 The code for the ordering process is used with small manipulations, but the main frame is still the same. After creating a webhook that will carry the data needed to send a proper request, the button is ready to launch. The new webhook is also similar to the one that is used for the ordering process, however, not it sends a POST request to our website. Since the project is developed locally, it was not possible to send/receive requests to the localhost using webhooks. Thus, [Ultrahook](http://www.ultrahook.com/) web services is used for this purpose.
