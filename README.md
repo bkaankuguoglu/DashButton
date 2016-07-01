@@ -13,7 +13,7 @@ The Dash Button device is simply an electrical circuit that contains a Particle 
 
 <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg" height="250">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg" height="250">
 
-<center>(Figure: Sketch of the dash button on half and mini breadboards.)</center>
+*(Figure: Sketch of the dash button on half and mini breadboards.)*
 
 
 
@@ -54,6 +54,8 @@ Yet another significant concept that helps us build particle devices is webhooks
 There are many different ways for creating a webhooks, however, the two of these methods are more convenient among others. Firstly, Particle Dashboard web interface offers a way to create webhooks, and also to manage them. The second approach, which I find it more convenient and easily modifiable, is creating webhooks via terminal commands, after creating a “.json” file on your computer. Since your Particle Desktop IDE is nothing but a specialized version of Atom, a widely used open source text editor, developers can always open a new tab on their desktop IDE and create their webhooks recipe without even bothering to open their web browser. Likewise, manipulating webhooks can also be done via Particle Dashboard or terminal/console on your computer.
 
 Last but not least, manipulating webhooks can easily get messy considering that modifying webhooks are not as straight forward as creating or deleting them. In fact, you cannot edit the webhook you already created, yet you can delete it and create a new webhook with the same name. However, since it is possible to create a webhook with a duplicate name, a developer must carefully check which webhook she/he publishes with their code. If possible, the duplications on webhook must be avoided for the sake of consistency of the system.
+
+<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_text.png" height="300">   <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_console.png" height="300"> 
 
 ### 3.4. Twilio API
 
