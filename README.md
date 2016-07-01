@@ -11,11 +11,11 @@ The dash button can be specialized to any activity that functions online and sup
 
 The Dash Button device is simply an electrical circuit that contains a Particle Photon device, a momentary switch button and a 220Ω resistor with an approximately error rate ±5%. Furthermore, it can be powered up by any power source using voltage between 3.6V and 5.5V. For the sake of simplicity, three serially connected AA batteries (1.5V×3 = 4.5V) are used to build the prototype of the project.
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg=250x)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg =250x)
 
 *(Figure: Sketch of the dash button on an half breadboard)*
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg=250x)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg =250x)
 
 *(Figure: Sketch of the dash button on a mini breadboard)*
 
