@@ -11,7 +11,7 @@ The dash button can be specialized to any activity that functions online and sup
 
 The Dash Button device is simply an electrical circuit that contains a Particle Photon device, a momentary switch button and a 220Ω resistor with an approximately error rate ±5%. Furthermore, it can be powered up by any power source using voltage between 3.6V and 5.5V. For the sake of simplicity, three serially connected AA batteries (1.5V×3 = 4.5V) are used to build the prototype of the project.
 
-<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg" height="250"> <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg" height="250">
+<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg" height="250">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg" height="250">
 
 *(Figure: Sketch of the dash button on half and mini breadboards.)*
 
@@ -39,13 +39,9 @@ The server simply holds the data related to users and their personal information
 
 As shown in the Design section, the dash button can be built by using both mini and half breadboards, or any breadboard tools in general. Aiming to implement a prototype that satisfies all the functionalities and requirements as well as keeping the size of the artifact as minimal as possible, the project is built by using mini and half breadboards. With the last prototype built by using mini breadboard, the dimensions of the dash button stand as 72×56×32mm, which is quite handy for a prototype.
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_half.png)
+<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_half.png" height="250">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_mini.png" height="250">
 
-*(Figure: Prototype of the dash button using an half breadboard)*
-
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_mini.png)
-
-*(Figure: Prototype of the dash button using a mini breadboard)*
+*(Figure: Prototypes of the dash button using half and mini breadboards)*
 
 ### 3.3. Coding the Dash Button
 
