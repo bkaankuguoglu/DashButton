@@ -55,13 +55,13 @@ There are many different ways for creating a webhooks, however, the two of these
 
 Last but not least, manipulating webhooks can easily get messy considering that modifying webhooks are not as straight forward as creating or deleting them. In fact, you cannot edit the webhook you already created, yet you can delete it and create a new webhook with the same name. However, since it is possible to create a webhook with a duplicate name, a developer must carefully check which webhook she/he publishes with their code. If possible, the duplications on webhook must be avoided for the sake of consistency of the system.
 
-<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_text.png" height="300">   
+<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_text.png" width="500">   
 
 (Figure: an example of a webhook text)
 
 
 
-<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_console.png" height="300">
+<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_console.png"  width="500">
 
 (Figure: How to create a webhook on the console)
 
