@@ -39,7 +39,7 @@ The server simply holds the data related to users and their personal information
 
 As shown in the Design section, the dash button can be built by using both mini and half breadboards, or any breadboard tools in general. Aiming to implement a prototype that satisfies all the functionalities and requirements as well as keeping the size of the artifact as minimal as possible, the project is built by using mini and half breadboards. With the last prototype built by using mini breadboard, the dimensions of the dash button stand as 72×56×32mm, which is quite handy for a prototype.
 
-<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_half.jpeg" height="250">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_mini.jpeg" height="250">
+<img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_half.png" height="300">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_mini.png" height="300">
 
 *(Figure: Prototypes of the dash button using half and mini breadboards)*
 
