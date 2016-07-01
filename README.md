@@ -13,7 +13,7 @@ The Dash Button device is simply an electrical circuit that contains a Particle 
 
 <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg" height="250">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg" height="250">
 
-*(Figure: Sketch of the dash button on half and mini breadboards.)*
+<center>*(Figure: Sketch of the dash button on half and mini breadboards.)*</center>
 
 
 
@@ -33,7 +33,7 @@ The server simply holds the data related to users and their personal information
 
 ![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/HowCakePHP.png)
 
-*(Figure: How CakePHP works)*
+<center>*(Figure: How CakePHP works)*</center>
 
 ### 3.2. Building the Dash Button
 
@@ -41,7 +41,7 @@ As shown in the Design section, the dash button can be built by using both mini 
 
 <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_half.png" height="300">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_mini.png" height="300">
 
-*(Figure: Prototypes of the dash button using half and mini breadboards)*
+<center>*(Figure: Prototypes of the dash button using half and mini breadboards)*</center>
 
 ### 3.3. Coding the Dash Button
 
