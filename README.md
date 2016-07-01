@@ -11,14 +11,13 @@ The dash button can be specialized to any activity that functions online and sup
 
 The Dash Button device is simply an electrical circuit that contains a Particle Photon device, a momentary switch button and a 220Ω resistor with an approximately error rate ±5%. Furthermore, it can be powered up by any power source using voltage between 3.6V and 5.5V. For the sake of simplicity, three serially connected AA batteries (1.5V×3 = 4.5V) are used to build the prototype of the project.
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg =250x)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg)
 
 *(Figure: Sketch of the dash button on an half breadboard)*
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg =250x)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg)
 
 *(Figure: Sketch of the dash button on a mini breadboard)*
-
 
 
 
@@ -36,9 +35,21 @@ On the server side, CakePHP, an open source framework for rapid application deve
 
 The server simply holds the data related to users and their personal information paired with their unique device ids. Hence, this uniqueness allows the server to call the ordering process for the dash button owner. As the the dash button is pushed, it posts the device id and the the time that is published at to the server. Then, server retrieves the device id and looks it up on the Devices table, where all the device ids and their owners’ personal information is held. If the device id sent by the dash button exists in the database, then it triggers the ordering process as well as notifying the user about the process via SMS.
 
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/HowCakePHP.png)
+
+*(Figure: How CakePHP works)*
+
 ### 3.2. Building the Dash Button
 
 As shown in the Design section, the dash button can be built by using both mini and half breadboards, or any breadboard tools in general. Aiming to implement a prototype that satisfies all the functionalities and requirements as well as keeping the size of the artifact as minimal as possible, the project is built by using mini and half breadboards. With the last prototype built by using mini breadboard, the dimensions of the dash button stand as 72×56×32mm, which is quite handy for a prototype.
+
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_half.jpg)
+
+*(Figure: Prototype of the dash button using an half breadboard)*
+
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/Prototype_mini.jpg)
+
+*(Figure: Prototype of the dash button using a mini breadboard)*
 
 ### 3.3. Coding the Dash Button
 
