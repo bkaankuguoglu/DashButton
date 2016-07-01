@@ -166,49 +166,75 @@ class DevicesController extends AppController
 
       $firebase = new \Firebase\FirebaseLib($DEFAULT_URL, $DEFAULT_TOKEN);
       $lines = [
-        "FORCE: XX0022. ENCYPT://000.222.2345",
-        "TRYPASS: ********* AUTH CODE: ALPHA GAMMA: 1___ PRIORITY 1",
-        "RETRY: REINDEER FLOTILLA",
-        "Z:> /FALKEN/GAMES/TICTACTOE/ EXECUTE -PLAYERS 0",
-        "================================================",
-        "Priority 1 // local / scanning...",
-        "scanning ports...",
-        "BACKDOOR FOUND (23.45.23.12.00000000)",
-        "BACKDOOR FOUND (13.66.23.12.00110000)",
-        "BACKDOOR FOUND (13.66.23.12.00110044)",
-        "...",
-        "...",
-        "BRUTE.EXE -r -z",
-        "...locating vulnerabilities...",
-        "...vulnerabilities found...",
-        "MCP/> DEPLOY CLU",
-        "SCAN: __ 0100.0000.0554.0080",
-        "SCAN: __ 0020.0000.0553.0080",
-        "SCAN: __ 0001.0000.0554.0550",
-        "SCAN: __ 0012.0000.0553.0030",
-        "SCAN: __ 0100.0000.0554.0080",
-        "SCAN: __ 0020.0000.0553.0080",
-        "BACKDOOR FOUND (23.45.23.12.00000000)",
-        "BACKDOOR FOUND (13.66.23.12.00110000)",
-        "BACKDOOR FOUND (13.66.23.12.00110044)",
-        "...",
-        "...",
-        "BRUTE.EXE -r -z",
-        "...locating vulnerabilities...",
-        "...vulnerabilities found...",
-        "MCP/> DEPLOY CLU",
-        "SCAN: __ 0100.0000.0554.0080",
-        "SCAN: __ 0020.0000.0553.0080",
-        "SCAN: __ 0001.0000.0554.0550",
-        "SCAN: __ 0012.0000.0553.0030",
-        "SCAN: __ 0100.0000.0554.0080",
-        "SCAN: __ 0020.0000.0553.0080",
+        "FORCE:"," XX0022."," ENCYPT:","//000.","222",".2345",
+        "<br>TRYPASS:"," *********"," AUTH CODE:"," ALPHA GAMMA:"," 1___ PRIORITY 1",
+        "<br>RETRY:"," REINDEER"," FLOTILLA",
+        "<br>Z:>"," /FALKEN/","GAMES","/TICTACTOE","/ EXECUTE"," -PLAYERS"," 0",
+        "<br>=====","=======","=============","===========","========","====",
+        "<br>Priority 1"," // local ","/ scanning...",
+        "<br>scanning"," ports...",
+        "<br>BACKDOOR"," FOUND"," (23.45.23.12.00000000)",
+        "<br>BACKDOOR"," FOUND"," (13.66.23.12.00110000)",
+        "<br>BACKDOOR"," FOUND"," (13.66.23.12.00110044)",
+        "<br>...",
+        "<br>...",
+        "<br>BRUTE.EXE"," -r -z",
+        "<br>...locating"," vulnerabi","lities...",
+        "<br>...vulnerab","ilities"," found...",
+        "<br>MCP/>"," DEPLOY"," CLU",
+        "<br>SCAN:"," __ 0100.","0000.","0554.","0080",
+        "<br>SCAN:"," __ 0020.","0000.","0553.","0080",
+        "<br>SCAN:"," __ 0001.","0000.","0554.","0550",
+        "<br>SCAN:"," __ 0012.","0000",".0553",".0030",
+        "<br>SCAN:"," __ 0100",".0000.","0554.","0080",
+        "<br>SCAN:"," __ 0020",".0000",".0553",".0080",
+        "<br>BACKDOOR"," FOUND ","(23.","45.","23.12",".0000","0000)",
+        "<br>BACKDOOR"," FOUND ","(13",".66.","23.12",".0011","0000)",
+        "<br>BACKDOOR"," FOUND ","(13.","66.","23.12",".0011","0044)",
+        "<br>...",
+        "<br>...",
+        "<br>BRUTE.EXE"," -r -z",
+        "<br>...locating"," vulnerabi","lities...",
+        "<br>...vulnerab","ilities"," found...",
+        "<br>MCP/>"," DEPLOY"," CLU",
+        "<br>SCAN:"," __ 0100.","0000.","0554.","0080",
+        "<br>SCAN:"," __ 0020.","0000.","0553.","0080",
+        "<br>SCAN:"," __ 0001.","0000.","0554.","0550",
+        "<br>SCAN:"," __ 0012.","0000",".0553",".0030",
+        "<br>SCAN:"," __ 0100",".0000.","0554.","0080",
+        "<br>SCAN:"," __ 0020",".0000",".0553",".0080",
+        "<br>BACKDOOR"," FOUND ","(23.","45.","23.12",".0000","0000)",
+        "<br>BACKDOOR"," FOUND ","(13",".66.","23.12",".0011","0000)",
+        "<br>BACKDOOR"," FOUND ","(13.","66.","23.12",".0011","0044)",
       ];
-
       foreach ($lines as $line) {
         $foo = $firebase->push($DEFAULT_PATH."code/",$line);
         echo "child_added";
-        sleep(0.1);
+        $stop = mt_rand(0,0.5);
+        $rand = mt_rand(0,10);
+
+        switch ($rand) {
+            case 0:
+                $stop += 0.0;
+                break;
+            case 1:
+                $stop += 0.1;
+                break;
+            case 2:
+                $stop += 0.2;
+                break;
+            case 3:
+                $stop += 0.3;
+                break;
+            case 4:
+                $stop += 0.5;
+                break;
+            case 5:
+                $stop += 1;
+                break;
+        }
+
+        sleep($stop);
         echo "<br> ";
       }
 
@@ -220,6 +246,12 @@ class DevicesController extends AppController
       // Set the layout
       $this->viewBuilder()->layout('code');
     }
+
+    function checkWithProbability($probability=0.1, $length=10)
+    {
+      $test = mt_rand(1, $length);
+      return $test<=$probability*$length;
+}
 
 
 
