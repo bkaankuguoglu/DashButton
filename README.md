@@ -13,7 +13,7 @@ The Dash Button device is simply an electrical circuit that contains a Particle 
 
 <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg" height="250">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg" height="250">
 
-*(Figure: Sketch of the dash button on half and mini breadboards.)*
+<center>*(Figure: Sketch of the dash button on half and mini breadboards.)*</center>
 
 
 
@@ -58,6 +58,8 @@ Last but not least, manipulating webhooks can easily get messy considering that 
 <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_text.png" height="300">   
 
 (Figure: an example of a webhook text)
+
+
 
 <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/webhook_console.png" height="300">
 
