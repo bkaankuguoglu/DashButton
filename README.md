@@ -13,7 +13,7 @@ The Dash Button device is simply an electrical circuit that contains a Particle 
 
 <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg" height="250">      <img src="https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg" height="250">
 
-<center>*(Figure: Sketch of the dash button on half and mini breadboards.)*</center>
+<center>(Figure: Sketch of the dash button on half and mini breadboards.)</center>
 
 
 
