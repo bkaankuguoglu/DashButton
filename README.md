@@ -1,5 +1,8 @@
 # Dash Button Project
 
+[linkname](https://youtubevideourl)
+
+
 ## 1. Introduction
 
 Portera’s Dash Button is a Wi-Fi connected device that operates seamlessly integrated with the web server and cloud server and places an order with the press of a button. Each Dash Button is paired with a user, whose personal information and device ID is kept in the server after the sign-up process. Hence, the button allows user to place an order by using Cloud systems and IoT solutions. When the order process is completed, the user also gets notified about the order via SMS.
@@ -72,6 +75,9 @@ Twilio is one of the most common Global SMS/MMS platform, possibly the most popu
 
 As seen in the figure, the variables Account Sid and Authorization Token for the API must be obtained beforehand to use the Twilio Services. Twilio also provides us with a template code that sends a text message to a specific phone number on its website. Nevertheless, the example script provided by Twilio is not enough for some requirements in our project. Thus, the code is modified by adding the date that the order is received to the text message. Furthermore, in order to create a generic call method, the query that finds the user’s data stored in the database is added by using the methods CakePHP provides. As a matter of fact, these two cases are achieved by retrieving the time *(published_at)* and the device id *(particle_long)* data from the post request that is sent to the server via our dash button
 
+[![SMS confirmation](https://img.youtube.com/vi/QaDknOge7a0/0.jpg)](https://www.youtube.com/watch?v=QaDknOge7a0)
+
+
 ## 4. Installation
 ### 4.1. For Users
 
@@ -84,6 +90,8 @@ To develop a dash button, developer must form the circuit first, as described in
 ## 5. Examples
 
 ### 5.1. Dash Button Implementation for Text Crawler
+
+[![Text Crawler](https://img.youtube.com/vi/PRgdthwOWYg/0.jpg)](https://www.youtube.com/watch?v=PRgdthwOWYg)
 
 #### 5.1.1. Introduction
 Portera’s Dash Button is a Wi-Fi connected device that operates seamlessly integrated with the web server and cloud server, and, similar to the order dash button, send a request to the server with a click of the button. Hence, the button allows the user, that is the presenter in our case, to send a request to start the presentation with a long sliding text stream. In this very tiny case, how the components of the system and the system work are well documented in order to provide users a brief background of the project. The work flow of the system can be observed from the figure below.
