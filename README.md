@@ -11,11 +11,11 @@ The dash button can be specialized to any activity that functions online and sup
 
 The Dash Button device is simply an electrical circuit that contains a Particle Photon device, a momentary switch button and a 220Ω resistor with an approximately error rate ±5%. Furthermore, it can be powered up by any power source using voltage between 3.6V and 5.5V. For the sake of simplicity, three serially connected AA batteries (1.5V×3 = 4.5V) are used to build the prototype of the project.
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/DashButton_Sketch.jpg)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch.jpg)
 
 *(Figure: Sketch of the dash button on an half breadboard)*
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/DashButton_Sketch_Mini.jpg)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/DashButton_Sketch_Mini.jpg)
 
 *(Figure: Sketch of the dash button on a mini breadboard)*
 
@@ -78,7 +78,7 @@ Portera’s Dash Button is a Wi-Fi connected device that operates seamlessly int
 
 After the dash button is pushed, it creates the data stored in json format and sends a request to the server with the help of webhooks. Then, the request is received by the server via Firebase, which asynchronously listens request and keeps the webpage up to date with the changes, and the validity of the request is checked by evaluating the form being sent in the same request. In so doing, the possibility of interruption by any other source but our devices is eliminated. When the request is found to be “safe”, the web page is updated via call by Firebase. By using the Firebase plugin, AngularFire, AngularJS enables us to make changes on the web page on real time without refreshing.
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/TextCrawlerDiagram.png)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/TextCrawlerDiagram.png)
 
 *(Figure: How the system works)*
 
@@ -93,7 +93,7 @@ After the dash button is pushed, it creates the data stored in json format and s
 - [AngularFire](https://github.com/firebase/angularfire)
 - [AngularJS Bindings for Firebase](https://github.com/ktamas77/firebase-php)
 
-![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/TextCrawlerWorkingEnv.png)
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/Images/TextCrawlerWorkingEnv.png)
 
 *(Figure: Environment in the Development Phase)*
 
