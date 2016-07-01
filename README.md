@@ -65,9 +65,10 @@ To develop a dash button, developer must form the circuit first, as described in
 #### 5.1.1. Introduction
 Portera’s Dash Button is a Wi-Fi connected device that operates seamlessly integrated with the web server and cloud server, and, similar to the order dash button, send a request to the server with a click of the button. Hence, the button allows the user, that is the presenter in our case, to send a request to start the presentation with a long sliding text stream. In this very tiny case, how the components of the system and the system work are well documented in order to provide users a brief background of the project. The work flow of the system can be observed from the figure below.
 
-After the dash button is pushed, it creates the data stored in json format and sends a request to the server with the help of webhooks. Then, the request is received by the server via Firebase, which asynchronously listens request and keeps the webpage up to date with the changes, and the validity of the request is checked by evaluating the form being sent in the same request. In so doing, the possibility of interruption by any other source but our devices is eliminated. When the request is found to be “safe”, the web page is updated via call by Firebase. By using the Firebase plugin, AngularFire, AngularJS enables us to make changes on the web page on real time without refreshing. 
+After the dash button is pushed, it creates the data stored in json format and sends a request to the server with the help of webhooks. Then, the request is received by the server via Firebase, which asynchronously listens request and keeps the webpage up to date with the changes, and the validity of the request is checked by evaluating the form being sent in the same request. In so doing, the possibility of interruption by any other source but our devices is eliminated. When the request is found to be “safe”, the web page is updated via call by Firebase. By using the Firebase plugin, AngularFire, AngularJS enables us to make changes on the web page on real time without refreshing.
 
 ![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/TextCrawlerDiagram.png)
+*(Figure: How the system works)*
 
 #### 5.1.2. Design & Implementation
 
@@ -79,6 +80,10 @@ After the dash button is pushed, it creates the data stored in json format and s
 - [Firebase](https://firebase.google.com/)
 - [AngularFire](https://github.com/firebase/angularfire)
 - [AngularJS Bindings for Firebase](https://github.com/ktamas77/firebase-php)
+
+![alt tag](https://github.com/bkaankuguoglu/DashButton/blob/master/TextCrawlerDiagramEnv.png)
+*(Figure: Environment in the Development Phase)*
+
 
 Portera’s Dash Button prototype that has been created earlier is used as a remote controller that sends a request to the server. Thus, Particle Photon device and utilities offered with the package is used for Wi-Fi and cloud configuration with the dash button.
 
